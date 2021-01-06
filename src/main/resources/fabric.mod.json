@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "she_ra",
+  "version": "${version}",
+  "name": "she-ra-fabric",
+  "description": "Mod that implements items from the Hit 2018 Show She-Ra",
+  "authors": [
+    "Stereo528"
+  ],
+  "contributors": [],
+  "contact": {
+    "homepage": "https://stereo528.github.io/mods.html"
+  },
+  "license": "MIT",
+  "icon": "assets/she_ra/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.stereo528.Main"
+    ],
+    "client": [],
+    "server": []
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "fabric": "*"
+  }
+}
