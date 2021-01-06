@@ -9,7 +9,9 @@
   ],
   "contributors": [],
   "contact": {
-    "homepage": "https://stereo528.github.io/mods.html"
+    "homepage": "https://stereo528.github.io/mods.html",
+    "issues": "https://github.com/Stereo528/she-ra_fabric/issues",
+    "sources": "https://github.com/Stereo528/she-ra_fabric"
   },
   "license": "MIT",
   "icon": "assets/she_ra/icon.png",
