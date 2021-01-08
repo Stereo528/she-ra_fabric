@@ -18,7 +18,7 @@ import static io.github.stereo528.Main.MOD_ID;
 import static io.github.stereo528.Main.MOD_NAME;
 import static io.github.stereo528.Main.GROUP;
 
-public class ItemRegistar {
+public class ItemRegister {
 
     public static Logger LOGGER = LogManager.getLogger();
 

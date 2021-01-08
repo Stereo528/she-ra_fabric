@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static io.github.stereo528.ItemRegistar.RUNE;
+import static io.github.stereo528.ItemRegister.RUNE;
 
 public class Main implements ModInitializer {
 
@@ -26,7 +26,9 @@ public class Main implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ItemRegistar.init();
+        BlockRegister.init();
+        BlockItemRegister.init();
+        ItemRegister.init();
         log(Level.INFO, "For the Honor of Grayskull!");
     }
 

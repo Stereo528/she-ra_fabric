@@ -21,6 +21,15 @@ dependencies {
 
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 	modImplementation "io.github.prospector:modmenu:1.14.13+build.22"
+	modApi 'teamreborn:energy:0.1.1'
+	include 'teamreborn:energy:0.1.1'
+	modImplementation include("io.github.cottonmc:LibGui:3.3.2+1.16.4")
+}
+
+repositories {
+	maven {
+		url 'https://server.bbkr.space/artifactory/libs-release/'
+	}
 }
 
 processResources {
