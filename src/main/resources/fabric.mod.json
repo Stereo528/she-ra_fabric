@@ -26,8 +26,6 @@
   "mixins": [],
   "depends": {
     "fabricloader": ">=0.10.8",
-    "fabric": "*",
-    "teamreborn:energy": "0.1.1",
-    "LibGui": "3.3.2"
+    "fabric": "*"
   }
 }
