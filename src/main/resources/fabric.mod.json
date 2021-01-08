@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "she_ra",
   "version": "${version}",
-  "name": "she-ra-fabric",
+  "name": "She-Ra",
   "description": "Mod that implements items from the Hit 2018 Show She-Ra",
   "authors": [
     "Stereo528"
