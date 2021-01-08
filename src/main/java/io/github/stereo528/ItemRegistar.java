@@ -41,6 +41,7 @@ public class ItemRegistar {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "movement_core"), CORE_M);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ranged_core"), CORE_R);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "agility_core"), CORE_A);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "tele_core"), CORE_T);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_ingot"), INGOT_E);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "runestone"), RUNE);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "enchanted_runestone"), RUNE_M);
