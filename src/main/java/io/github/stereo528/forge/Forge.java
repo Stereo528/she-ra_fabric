@@ -1,6 +1,6 @@
 package io.github.stereo528.forge;
 
-import io.github.stereo528.BlockRegister;
+import io.github.stereo528.util.BlockRegister;
 import net.minecraft.block.entity.BlockEntity;
 
 public class Forge extends BlockEntity {

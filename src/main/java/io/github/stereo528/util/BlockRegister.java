@@ -1,4 +1,4 @@
-package io.github.stereo528;
+package io.github.stereo528.util;
 
 import io.github.stereo528.forge.Forge;
 import io.github.stereo528.forge.ForgeBlock;

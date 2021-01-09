@@ -1,4 +1,4 @@
-package io.github.stereo528;
+package io.github.stereo528.util;
 
 import io.github.stereo528.ItemTypes.GiveItGlint;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;

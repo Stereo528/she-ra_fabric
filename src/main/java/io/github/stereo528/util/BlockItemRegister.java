@@ -1,4 +1,4 @@
-package io.github.stereo528;
+package io.github.stereo528.util;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -6,8 +6,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.Level;
 
-import static io.github.stereo528.BlockRegister.FORGE_BLOCK;
-import static io.github.stereo528.BlockRegister.OPAL_ORE;
+import static io.github.stereo528.util.BlockRegister.FORGE_BLOCK;
+import static io.github.stereo528.util.BlockRegister.OPAL_ORE;
 import static io.github.stereo528.Main.*;
 
 public class BlockItemRegister {

@@ -1,5 +1,8 @@
 package io.github.stereo528;
 
+import io.github.stereo528.util.BlockItemRegister;
+import io.github.stereo528.util.BlockRegister;
+import io.github.stereo528.util.ItemRegister;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -10,7 +13,7 @@ import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import static io.github.stereo528.ItemRegister.RUNE;
+import static io.github.stereo528.util.ItemRegister.RUNE;
 
 public class Main implements ModInitializer {
 
