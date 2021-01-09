@@ -3,8 +3,8 @@ package io.github.stereo528.tools;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ToolMaterial;
 
-public class OpalAxeItem extends AxeItem {
-    public OpalAxeItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
+public class SheRaAxeItem extends AxeItem {
+    public SheRaAxeItem(ToolMaterial material, float attackDamage, float attackSpeed, Settings settings) {
         super(material, attackDamage, attackSpeed, settings);
     }
 }

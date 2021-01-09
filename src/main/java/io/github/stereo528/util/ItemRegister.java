@@ -1,11 +1,9 @@
 package io.github.stereo528.util;
 
 import io.github.stereo528.ItemTypes.GiveItGlint;
-import io.github.stereo528.tools.OpalAxeItem;
-import io.github.stereo528.tools.OpalHoeItem;
-import io.github.stereo528.tools.OpalPickItem;
-import io.github.stereo528.tools.OpalTool;
-import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
+import io.github.stereo528.tools.SheRaAxeItem;
+import io.github.stereo528.tools.SheRaHoeItem;
+import io.github.stereo528.tools.SheRaPickItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
@@ -18,7 +16,8 @@ import org.apache.logging.log4j.Logger;
 import static io.github.stereo528.Main.MOD_ID;
 import static io.github.stereo528.Main.MOD_NAME;
 import static io.github.stereo528.Main.GROUP;
-import static io.github.stereo528.tools.OpalTool.INSTANCE;
+import static io.github.stereo528.tools.EtheriumTool.ETHERIUM_TOOL;
+import static io.github.stereo528.tools.OpalTool.OPAL_TOOL;
 
 public class ItemRegister {
 
@@ -36,11 +35,18 @@ public class ItemRegister {
     public static final Item RUNE = new Item(new FabricItemSettings().group(GROUP));
     public static final Item RUNE_M = new GiveItGlint(new FabricItemSettings().group(GROUP).maxCount(16).rarity(Rarity.RARE));
     //Tools
-    public static final ToolItem OPAL_SWORD = new SwordItem(INSTANCE, 5, -2.4f, new Item.Settings().group(GROUP));
-    public static final ToolItem OPAL_SHOVEL = new ShovelItem(INSTANCE, 2, -3.0f, new Item.Settings().group(GROUP));
-    public static final ToolItem OPAL_PICK = new OpalPickItem(INSTANCE, 4, -2.0f, new Item.Settings().group(GROUP));
-    public static final ToolItem OPAL_AXE = new OpalAxeItem(INSTANCE, 7, -3.1f, new Item.Settings().group(GROUP));
-    public static final ToolItem OPAL_HOE = new OpalHoeItem(INSTANCE, 1, -2.0f, new Item.Settings().group(GROUP));
+        //OPAL
+    public static final ToolItem SWORD_O = new SwordItem(OPAL_TOOL, 5, -2.4f, new Item.Settings().group(GROUP));
+    public static final ToolItem SHOVEL_O = new ShovelItem(OPAL_TOOL, 2, -3.0f, new Item.Settings().group(GROUP));
+    public static final ToolItem PICK_O = new SheRaPickItem(OPAL_TOOL, 4, -2.0f, new Item.Settings().group(GROUP));
+    public static final ToolItem AXE_O = new SheRaAxeItem(OPAL_TOOL, 7, -3.1f, new Item.Settings().group(GROUP));
+    public static final ToolItem HOE_O = new SheRaHoeItem(OPAL_TOOL, 1, -2.0f, new Item.Settings().group(GROUP));
+        //ETHERIUM
+    public static final ToolItem SWORD_E = new SwordItem(ETHERIUM_TOOL, 5, -2.2f, new Item.Settings().group(GROUP));
+    public static final ToolItem SHOVEL_E = new ShovelItem(ETHERIUM_TOOL, 2, -2.8f, new Item.Settings().group(GROUP));
+    public static final ToolItem PICK_E = new SheRaPickItem(ETHERIUM_TOOL, 4, -1.8f, new Item.Settings().group(GROUP));
+    public static final ToolItem AXE_E = new SheRaAxeItem(ETHERIUM_TOOL, 3, -2.9f, new Item.Settings().group(GROUP));
+    public static final ToolItem HOE_E = new SheRaHoeItem(ETHERIUM_TOOL, 1, -1.8f, new Item.Settings().group(GROUP));
 
     public static void init() {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "magic_stick"), STICK);
@@ -54,11 +60,16 @@ public class ItemRegister {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "runestone"), RUNE);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "enchanted_runestone"), RUNE_M);
         //Tools
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_sword"), OPAL_SWORD);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_pickaxe"), OPAL_PICK);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_axe"), OPAL_AXE);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_shovel"), OPAL_SHOVEL);
-        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_hoe"), OPAL_HOE);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_sword"), SWORD_O);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_pickaxe"), PICK_O);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_axe"), AXE_O);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_shovel"), SHOVEL_O);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_hoe"), HOE_O);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_sword"), SWORD_E);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_pickaxe"), PICK_E);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_axe"), AXE_E);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_shovel"), SHOVEL_E);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_hoe"), HOE_E);
 
 
 

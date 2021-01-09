@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "she_ra:item/etherium_pickaxe"
+  }
+}
