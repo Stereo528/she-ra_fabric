@@ -17,6 +17,7 @@ public class BlockRegister {
     public static Logger LOGGER = LogManager.getLogger();
 
     public static final Block OPAL_ORE = new Block(FabricBlockSettings.of(Material.STONE).hardness(4.0f));
+    public static final Block MAGIC_WOOD = new Block(FabricBlockSettings.of(Material.WOOD).hardness(2.0f).breakByHand(true));
 
 
 
