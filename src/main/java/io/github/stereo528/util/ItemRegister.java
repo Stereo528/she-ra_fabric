@@ -1,10 +1,12 @@
 package io.github.stereo528.util;
 
+import io.github.stereo528.ArmorTypes.EtheriumArmor;
 import io.github.stereo528.ItemTypes.GiveItGlint;
 import io.github.stereo528.tools.SheRaAxeItem;
 import io.github.stereo528.tools.SheRaHoeItem;
 import io.github.stereo528.tools.SheRaPickItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
@@ -47,6 +49,13 @@ public class ItemRegister {
     public static final ToolItem PICK_E = new SheRaPickItem(ETHERIUM_TOOL, 4, -1.8f, new Item.Settings().group(GROUP));
     public static final ToolItem AXE_E = new SheRaAxeItem(ETHERIUM_TOOL, 3, -2.9f, new Item.Settings().group(GROUP));
     public static final ToolItem HOE_E = new SheRaHoeItem(ETHERIUM_TOOL, 1, -1.8f, new Item.Settings().group(GROUP));
+    //Armor
+        //ETHERIUM
+    public static final ArmorMaterial etheriumArmor = new EtheriumArmor();
+    public static final Item HELMET_E = new ArmorItem(etheriumArmor, EquipmentSlot.HEAD, new Item.Settings().group(GROUP).fireproof());
+    public static final Item CHEST_E = new ArmorItem(etheriumArmor, EquipmentSlot.CHEST, new Item.Settings().group(GROUP).fireproof());
+    public static final Item LEGS_E = new ArmorItem(etheriumArmor, EquipmentSlot.LEGS, new Item.Settings().group(GROUP).fireproof());
+    public static final Item FEET_E = new ArmorItem(etheriumArmor, EquipmentSlot.FEET, new Item.Settings().group(GROUP).fireproof());
 
     public static void init() {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "magic_stick"), STICK);
@@ -70,6 +79,11 @@ public class ItemRegister {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_axe"), AXE_E);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_shovel"), SHOVEL_E);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_hoe"), HOE_E);
+        //Armor
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_helmet"), HELMET_E);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_chestplate"), CHEST_E);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_leggings"), LEGS_E);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_boots"), FEET_E);
 
 
 
