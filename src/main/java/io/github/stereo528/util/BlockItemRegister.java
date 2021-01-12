@@ -5,12 +5,15 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import static io.github.stereo528.util.BlockRegister.MAGIC_WOOD;
-import static io.github.stereo528.util.BlockRegister.OPAL_ORE;
 import static io.github.stereo528.Main.*;
+import static io.github.stereo528.util.BlockRegister.OPAL_ORE;
+import static io.github.stereo528.util.BlockRegister.MAGIC_WOOD;
 
 public class BlockItemRegister {
+    public static Logger LOGGER = LogManager.getLogger();
     public static void init() {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_ore"), new BlockItem(OPAL_ORE, new Item.Settings().group(GROUP)));
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "magic_wood"), new BlockItem(MAGIC_WOOD, new Item.Settings().group(GROUP)));
