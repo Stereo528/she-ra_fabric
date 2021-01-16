@@ -34,8 +34,14 @@ public class ItemRegister {
     public static final Item CORE_R = new Item(new FabricItemSettings().group(GROUP));
     public static final Item CORE_T = new Item(new FabricItemSettings().group(GROUP));
     public static final Item INGOT_E = new Item(new FabricItemSettings().group(GROUP));
+    public static final Item INGOT_S = new Item(new FabricItemSettings().group(GROUP));
+    public static final Item INGOT_T = new Item(new FabricItemSettings().group(GROUP));
     public static final Item RUNE = new Item(new FabricItemSettings().group(GROUP));
     public static final Item RUNE_M = new GiveItGlint(new FabricItemSettings().group(GROUP).maxCount(16).rarity(Rarity.RARE));
+    public static final Item DARK_BRICK = new Item(new FabricItemSettings().group(GROUP));
+
+
+
     //Tools
         //OPAL
     public static final ToolItem SWORD_O = new SwordItem(OPAL_TOOL, 5, -2.4f, new Item.Settings().group(GROUP));
@@ -66,8 +72,11 @@ public class ItemRegister {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "agility_core"), CORE_A);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "tele_core"), CORE_T);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "etherium_ingot"), INGOT_E);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "steel_ingot"), INGOT_S);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "titanium_ingot"), INGOT_T);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "runestone"), RUNE);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "enchanted_runestone"), RUNE_M);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "dark_brick"), DARK_BRICK);
         //Tools
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_sword"), SWORD_O);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "opal_pickaxe"), PICK_O);
