@@ -1,10 +1,8 @@
 package io.github.stereo528.util;
 
-import io.github.stereo528.BlockTypes.Wood;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.Level;
@@ -17,14 +15,31 @@ import static io.github.stereo528.Main.MOD_NAME;
 public class BlockRegister {
     public static Logger LOGGER = LogManager.getLogger();
 
+    //General Blocks
     public static final Block OPAL_ORE = new Block(FabricBlockSettings.of(Material.STONE).hardness(4.0f).requiresTool());
-    public static final Block MAGIC_WOOD = new Wood(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).hardness(2.0f).breakByHand(true));
+    public static final Block DARK_BRICKS = new Block(FabricBlockSettings.of(Material.STONE).hardness(8.0f).requiresTool());
+
+    //Horde Blocks
+    public static final Block HORDE_PIPES = new Block(FabricBlockSettings.of(Material.STONE).hardness(5.0f).requiresTool());
+    public static final Block HORDE_WALL_1 = new Block(FabricBlockSettings.of(Material.STONE).hardness(5.0f).requiresTool());
+    public static final Block HORDE_WALL_2 = new Block(FabricBlockSettings.of(Material.STONE).hardness(5.0f).requiresTool());
+    public static final Block HORDE_WALL_3 = new Block(FabricBlockSettings.of(Material.STONE).hardness(5.0f).requiresTool());
+
+    //Material Blocks
+    public static final Block OPAL_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(4.0f).requiresTool());
+    public static final Block ETHERIUM_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(12.0f).requiresTool());
+    public static final Block STEEL_BLOCK = new Block(FabricBlockSettings.of(Material.METAL).hardness(8.0f).requiresTool());
+    public static final Block TITANIUM_BLOCK = new Block(FabricBlockSettings.of(Material.STONE).hardness(8.0f).requiresTool());
 
 
 
     public static void init() {
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "opal_ore"), OPAL_ORE);
-        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "magic_wood"), MAGIC_WOOD);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "dark_bricks"), DARK_BRICKS);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "opal_block"), OPAL_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "etherium_block"), ETHERIUM_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "steel_block"), STEEL_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "titanium_block"), TITANIUM_BLOCK);
 
         log(Level.INFO, "All Blocks Registered");
     }
