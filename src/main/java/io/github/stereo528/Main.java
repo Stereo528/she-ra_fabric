@@ -3,6 +3,7 @@ package io.github.stereo528;
 import io.github.stereo528.util.BlockItemRegister;
 import io.github.stereo528.util.BlockRegister;
 import io.github.stereo528.util.ItemRegister;
+import io.github.stereo528.util.OreGen;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -32,6 +33,8 @@ public class Main implements ModInitializer {
         BlockRegister.init();
         BlockItemRegister.init();
         ItemRegister.init();
+
+        OreGen.init();
         log(Level.INFO, "For the Honor of Grayskull!");
     }
 
